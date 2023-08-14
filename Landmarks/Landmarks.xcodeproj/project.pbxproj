@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54C998DA2A89DEBD007D47D1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C998D92A89DEBD007D47D1 /* MapView.swift */; };
 		54D4030C2A82285900A691F3 /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D4030B2A82285900A691F3 /* LandmarksApp.swift */; };
 		54D4030E2A82285900A691F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D4030D2A82285900A691F3 /* ContentView.swift */; };
 		54D403102A82285B00A691F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54D4030F2A82285B00A691F3 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54C998D92A89DEBD007D47D1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		54D403082A82285900A691F3 /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D4030B2A82285900A691F3 /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
 		54D4030D2A82285900A691F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 		54D4030A2A82285900A691F3 /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
+				54C998D92A89DEBD007D47D1 /* MapView.swift */,
 				54D4030B2A82285900A691F3 /* LandmarksApp.swift */,
 				54D4030D2A82285900A691F3 /* ContentView.swift */,
 				54D4030F2A82285B00A691F3 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54D4030E2A82285900A691F3 /* ContentView.swift in Sources */,
+				54C998DA2A89DEBD007D47D1 /* MapView.swift in Sources */,
 				54D4030C2A82285900A691F3 /* LandmarksApp.swift in Sources */,
 				54DCFED62A8618CA00D30EA3 /* CircleImage.swift in Sources */,
 			);
