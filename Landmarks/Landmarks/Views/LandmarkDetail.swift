@@ -1,55 +1,55 @@
 //
-//  ContentView.swift
+//  LandmarkDetail.swift
 //  Landmarks
 //
-//  Created by Pham Hoang Phuong on 08/08/2023.
+//  Created by Pham Hoang Phuong on 15/08/2023.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct LandmarkDetail: View {
+    var landmark : Landmark
+    
     var body: some View {
-        VStack(alignment: .leading) {
-            MapView()
+        ScrollView {
+            MapView(coordinate: landmark.locationCoordinate)
                 .ignoresSafeArea(edges: .top)
                 .frame(height: 300)
             
-            CircleImage()
+            CircleImage(image: landmark.image)
                 .padding(.bottom, -130)
-                .offset(y: -130)
+                .offset(x: -60, y: -130)
                 
             VStack(alignment: .leading) {
-                Text("Turtle Rock")
+                Text(landmark.name)
                     .font(.title)
                 
                 HStack {
-                    Text("Joshua Tree National Park")
+                    Text(landmark.park)
                         .font(.subheadline)
                     Spacer()
-                    Text("California")
+                    Text(landmark.state)
                         .font(.subheadline)
                 }
                 .font(.subheadline)
                 .foregroundColor(.gray)
                 
                 Divider()
-                Text("About Turtle Rock").font(.title2)
-                Text("Descriptive text goes over here")
+                Text("About \(landmark.name)").font(.title2)
+                Text(landmark.description)
             }
             .padding()
             
             Spacer()
         }
         
-        
-        
-        
-        
+        .navigationTitle(landmark.name)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LandmarkDetail(landmark: landmarks[0])
     }
 }
